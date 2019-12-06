@@ -19,7 +19,7 @@ bot.on('message', msg => {
     .then(res => res.json())
     .then(r => {
         var lucky = r.data
-        if (msg.content === 'lucky') {
+        if (msg.content === '!lucky') {
             msg.channel.send(`Dzisiaj szczęśliwy numerek ma numer ${lucky} - ${config[lucky]}`);
         }
     })
