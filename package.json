@@ -1,0 +1,30 @@
+{
+  "name": "send-lucky-discord",
+  "version": "1.0.0",
+  "description": "Send lucky number on discord.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "start-dev": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/latachz/send-lucky-discord.git"
+  },
+  "author": "Kacper Latuszewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/latachz/send-lucky-discord/issues"
+  },
+  "homepage": "https://github.com/latachz/send-lucky-discord#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "https": "^1.0.0",
+    "node-fetch": "^2.6.0"
+  }
+}
