@@ -16,6 +16,8 @@ bot.on('ready', () => {
 
 bot.on('message', msg => {
 
+    bot.login(TOKEN);
+
     fetch(url)
     .then(res => res.json())
     .then(r => {
