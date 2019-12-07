@@ -9,6 +9,9 @@ bot.login(TOKEN);
 
 const url = "https://get-lucky.netlify.com/.netlify/functions/get"
 
+let date = new Date();
+let hour = date.getHours();
+
 bot.on('ready', () => {
     console.info(`Logged in as ${bot.user.tag}!`);
 });
@@ -23,6 +26,6 @@ bot.on('message', msg => {
             msg.channel.send(`Dzisiaj szczęśliwy numerek ma numer ${lucky} - ${config[lucky]}`);
         }
     })
-
-
 });
+
+bot.on
