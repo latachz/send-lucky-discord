@@ -25,7 +25,7 @@ Create `./config.json` and paste there your configuration:
 }
 ```
 
-Create `./env.json` and paste there your configuration:
+Create `./.env` and paste there your configuration:
 
 ```env
 TOKEN=your_token
