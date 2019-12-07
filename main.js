@@ -5,8 +5,6 @@ const bot = new Discord.Client();
 const TOKEN = process.env.TOKEN;
 const config = require("./config.json");
 
-bot.login(TOKEN);
-
 const url = "https://get-lucky.netlify.com/.netlify/functions/get"
 
 let date = new Date();
@@ -28,4 +26,4 @@ bot.on('message', msg => {
     })
 });
 
-bot.on
+bot.login(TOKEN);
