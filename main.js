@@ -19,13 +19,14 @@ bot.on('message', msg => {
     bot.login(TOKEN);
 
     fetch(url)
-    .then(res => res.json())
-    .then(r => {
-        var lucky = r.data
-        if (msg.content === '!lucky') {
-            msg.channel.send(`Dzisiaj szczęśliwy numerek ma numer ${lucky} - ${config[lucky]}`);
-        }
-    })
+        .then(res => res.json())
+        .then(r => {
+            var lucky = r.data
+            if (msg.content === '!lucky') {
+                var date = lucky.date.split(" ")
+                msg.channel.send(`Dzisiaj (${date[0]}) szczęśliwy numerek ma numer ${lucky.luckyNumber} - ${config[lucky.luckyNumber]}`);
+            }
+        })
 });
 
 bot.login(TOKEN);
